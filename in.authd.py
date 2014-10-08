@@ -32,6 +32,8 @@ def main():
 				print "%s , %s : USERID : UNIX : %s\r" % (str(query_local_port), str(query_remote_port), str(username))
 			else:
 				print "%s , %s : ERROR : NO-USER\r" % (str(query_local_port), str(query_remote_port))
+	else:
+		print "0 , 0 : ERROR :INVALID-PORT\r"
 
 #
 # Get connection user id
@@ -52,6 +54,7 @@ def get_connection_uid(query_local_port, query_remote_port):
 		if os.path.isfile("/proc/net/tcp6"):
 			ports.extend(open("/proc/net/tcp6", "r").readlines())
 	except:
+		print "%s , %s : ERROR : UNKNOWN-ERROR\r" % (str(query_local_port), str(query_remote_port))
 		sys.exit(1)
 		
 	for line in ports:
