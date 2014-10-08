@@ -1,0 +1,13 @@
+service auth
+{
+      flags = REUSE
+      socket_type = stream
+      wait = no
+      user = ident
+      server = /opt/authd/in.authd.py
+      server_args = 
+      logonfailure += USERID
+      disable = no
+}
+
+
