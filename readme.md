@@ -1,6 +1,6 @@
 # authd written in python
 
-I couldn't get authd to work in centos 7 so I wrote my own.
+I needed authd for IRC but couldn't get the one supplied with centos 7 to work correctly so I wrote my own.
 
 # Installation
 
