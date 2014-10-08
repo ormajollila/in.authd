@@ -5,9 +5,11 @@
 import sys, os
 
 def main():
-	query = sys.stdin.readline()
-	
-#	query = "50089, 6667"
+
+	if len(sys.argv) > 1:
+		query = ' '.join(sys.argv[1:])
+	else:
+		query = sys.stdin.readline()
 	
 	query = query.split(',')
 	if len(query) == 2:
