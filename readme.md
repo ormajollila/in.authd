@@ -7,10 +7,11 @@ Works well enough to get you to IRC. Lots of features probably missing...
 # Installation
 
 1. Install xinetd
-2. copy auth to /etc/xinet.d
+2. copy auth to /etc/xinetd.d
 3. mkdir -p /opt/authd
 4. copy in.authd.py to /opt/authd
-5. Enable & start xinetd.service
+5. chmod a+x /opt/authd/in.authd.py
+6. Enable & start xinetd.service
 
 If you have selinux enabled, you need to set correct security context:
 
