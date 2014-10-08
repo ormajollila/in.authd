@@ -12,3 +12,5 @@ Works well enough to get you to IRC. Lots of features probably missing...
 4. copy in.authd.py to /opt/authd
 5. Enable & start xinetd.service
 
+If you have selinux enabled, you need to set correct security context:
+`chcon system_u:object_r:inetd_child_exec_t:s0 /opt/authd/in.authd.py`
