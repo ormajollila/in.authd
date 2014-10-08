@@ -1,6 +1,6 @@
-# in.authd written in python
+# authd written in python
 
-I couldn't get in.authd work in centos 7 so I wrote my own.
+I couldn't get authd to work in centos 7 so I wrote my own.
 
 # Installation
 
@@ -9,5 +9,4 @@ I couldn't get in.authd work in centos 7 so I wrote my own.
 3. mkdir -p /opt/authd
 4. copy in.authd.py to /opt/authd
 5. Enable & start xinetd.service
-
 
