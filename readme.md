@@ -2,6 +2,8 @@
 
 I needed authd for IRC but couldn't get the one supplied with centos 7 to work correctly so I wrote my own.
 
+Works well enough to get you to IRC. Lots of features probably missing...
+
 # Installation
 
 1. Install xinetd
