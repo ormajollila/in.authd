@@ -9,3 +9,4 @@ I needed authd for IRC but couldn't get the one supplied with centos 7 to work c
 3. mkdir -p /opt/authd
 4. copy in.authd.py to /opt/authd
 5. Enable & start xinetd.service
+
