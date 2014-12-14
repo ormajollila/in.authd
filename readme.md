@@ -15,4 +15,4 @@ Works well enough to get you to IRC. Lots of features probably missing...
 
 If you have selinux enabled, you probably need to set correct security context:
 
-`chcon system_u:object_r:inetd_child_exec_t:s0 /opt/authd/in.authd.py`
+`chcon -t inetd_child_exec_t /opt/authd/in.authd.py`
