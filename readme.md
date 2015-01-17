@@ -12,7 +12,8 @@ Works well enough to get you to IRC. Lots of features probably missing...
 4. copy in.authd.py to /opt/authd
 5. chmod a+x /opt/authd/in.authd.py
 6. Create a new user "ident" (useradd -M ident ; usermod -L ident)
-7. Enable & start xinetd.service
+7. Open port 113/tcp
+8. Enable & start xinetd.service
 
 If you have selinux enabled, you probably need to set correct security context:
 
